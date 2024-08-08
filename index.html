@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./src/output.css">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <!-- full container -->
-  <div class="border border-dashed border-red-600 w-screen h-screen grid place-items-center">
-    <!-- content container -->
-    <div class=" w-[700px] h-[550px] flex">
-      <!-- results -->
-      <div class="inline-flex flex-col w-1/2 items-center h-full border border-dashed border-blue-600">
-        
-        <h1>Your Result</h1>
-        <h2>76</h2>
-        <p>of 100</p>
-      
-        <h3>Great</h3>Great
-        <p class="w-1/2">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
+    <title>Frontend Mentor | Results summary component</title>
 
-      </div>
-      <!-- summary -->
-      <div class="inline-flex flex-col items-center w-1/2 border border-dashed border-green-600">
-        
-        <h1>Summary</h1>
-      
-        <h3>Reaction</h3>
-        <span>
-          80 / 100
-        </span>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- full container -->
+    <div
+      class="border border-dashed border-red-600 w-screen h-screen grid place-items-center"
+    >
+      <!-- content container -->
+      <div
+        class="w-[700px] h-[550px] flex rounded-3xl border border-solid border-purple-800"
+      >
+        <!-- results -->
+        <div
+          class="inline-flex flex-col w-1/2 items-center justify-between h-full rounded-3xl py-5 border border-dashed border-purple-800"
+        >
+          <h1 class="">Your Result</h1>
 
-        <h3>
-          Memory
-        </h3>
+          <!-- circle div -->
+          <div>
+            <h2>76</h2>
+            <p>of 100</p>
+          </div>
 
-        <span>
-          92 / 100
-        </span>
-      
-        <h3>
-          Verbal
-        </h3>
+          <div class="inline-flex flex-col items-center">
+            <h3 class="mb-3">Great</h3>
+            <p class="w-1/2">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <!-- summary -->
+        <div class="inline-flex flex-col w-1/2 justify-between p-5">
+          <h1>Summary</h1>
 
-        <span>
-          61 / 100
-        </span>
+          <!-- summary-details container -->
+          <div class="flex flex-col basis-3/4 justify-evenly">
+            <div class="inline-flex justify-between">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="reaction icon"
+              />
+              <h3>Reaction</h3>
+              <span> 80 / 100 </span>
+            </div>
 
-      
-        <h3>
-          Visual
-        </h3>
+            <div class="inline-flex justify-between">
+              <img src="./assets/images/icon-memory.svg" alt="memory icon" />
+              <h3>Memory</h3>
+              <span> 92 / 100 </span>
+            </div>
 
-        <span>
-          72 / 100
-        </span>
-      
-        <a class="p-2 bg-slate-800 text-gray-100 text-center" href="#">
-          Continue
-        </a>
+            <div class="inline-flex justify-between">
+              <img src="./assets/images/icon-verbal.svg" alt="verbal icon" />
+              <h3>Verbal</h3>
+              <span> 61 / 100 </span>
+            </div>
 
+            <div class="inline-flex justify-between">
+              <img src="./assets/images/icon-visual.svg" alt="visual icon" />
+              <h3>Visual</h3>
+              <span> 72 / 100 </span>
+            </div>
+          </div>
+
+          <a
+            class="bg-slate-800 text-gray-100 text-center rounded-full p-3"
+            href="#"
+          >
+            Continue
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
