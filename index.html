@@ -11,6 +11,15 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./src/output.css" />
 
     <title>Frontend Mentor | Results summary component</title>
@@ -26,71 +35,110 @@
       }
     </style>
   </head>
-  <body>
-    <!-- full container -->
+  <body class="text-[18px]">
+    <!-- place content container in center-->
     <div
       class="border border-dashed border-red-600 w-screen h-screen grid place-items-center"
     >
       <!-- content container -->
       <div
-        class="w-[700px] h-[550px] flex rounded-3xl border border-solid border-purple-800"
+        class="w-[700px] h-[550px] flex rounded-3xl shadow-xl shadow-black/25"
       >
         <!-- results -->
         <div
-          class="inline-flex flex-col w-1/2 items-center justify-between h-full rounded-3xl py-5 border border-dashed border-purple-800"
+          class="font-hanken-grotesk inline-flex flex-col w-1/2 items-center justify-between h-full rounded-3xl py-8 text-light-lavender bg-gradient-to-b from-[#7857FF] to-[#2E2BE9]"
         >
-          <h1 class="">Your Result</h1>
+          <h1 class="text-2xl font-bold">Your Result</h1>
 
           <!-- circle div -->
-          <div>
-            <h2>76</h2>
-            <p>of 100</p>
+          <div
+            class="p-12 rounded-full bg-gradient-to-b from-[#2E2BE9] to-[#7857FF] text-center"
+          >
+            <h2 class="text-white text-6xl font-bold">76</h2>
+            <p class="text-sm">of 100</p>
           </div>
 
           <div class="inline-flex flex-col items-center">
-            <h3 class="mb-3">Great</h3>
-            <p class="w-1/2">
+            <h2 class="mb-2 text-4xl font-bold text-white">Great</h2>
+            <p class="text-center px-12">
               You scored higher than 65% of the people who have taken these
               tests.
             </p>
           </div>
         </div>
         <!-- summary -->
-        <div class="inline-flex flex-col w-1/2 justify-between p-5">
-          <h1>Summary</h1>
+        <div class="inline-flex flex-col w-1/2 justify-between py-8 px-6">
+          <h1 class="text-dark-gray-blue font-bold text-2xl">Summary</h1>
 
           <!-- summary-details container -->
           <div class="flex flex-col basis-3/4 justify-evenly">
-            <div class="inline-flex justify-between">
-              <img
-                src="./assets/images/icon-reaction.svg"
-                alt="reaction icon"
-              />
-              <h3>Reaction</h3>
-              <span> 80 / 100 </span>
+            <div
+              class="inline-flex justify-between p-4 rounded-lg bg-light-red/5"
+            >
+              <div class="inline-flex">
+                <img
+                  class="pr-4"
+                  src="./assets/images/icon-reaction.svg"
+                  alt="reaction icon"
+                />
+                <h3 class="font-bold text-light-red">Reaction</h3>
+              </div>
+              <p>
+                <span class="text-dark-gray-blue font-extrabold">80</span> / 100
+              </p>
             </div>
 
-            <div class="inline-flex justify-between">
-              <img src="./assets/images/icon-memory.svg" alt="memory icon" />
-              <h3>Memory</h3>
-              <span> 92 / 100 </span>
+            <div
+              class="inline-flex justify-between p-4 rounded-lg bg-orangey-yellow/5"
+            >
+              <div class="inline-flex">
+                <img
+                  class="pr-4"
+                  src="./assets/images/icon-memory.svg"
+                  alt="memory icon"
+                />
+                <h3 class="font-bold text-orangey-yellow">Memory</h3>
+              </div>
+              <p>
+                <span class="text-dark-gray-blue font-extrabold">92</span> / 100
+              </p>
             </div>
 
-            <div class="inline-flex justify-between">
-              <img src="./assets/images/icon-verbal.svg" alt="verbal icon" />
-              <h3>Verbal</h3>
-              <span> 61 / 100 </span>
+            <div
+              class="inline-flex justify-between p-5 rounded-lg bg-green-teal/5"
+            >
+              <div class="inline-flex">
+                <img
+                  class="pr-4"
+                  src="./assets/images/icon-verbal.svg"
+                  alt="verbal icon"
+                />
+                <h3 class="font-bold text-green-teal">Verbal</h3>
+              </div>
+              <p>
+                <span class="text-dark-gray-blue font-extrabold">61</span> / 100
+              </p>
             </div>
 
-            <div class="inline-flex justify-between">
-              <img src="./assets/images/icon-visual.svg" alt="visual icon" />
-              <h3>Visual</h3>
-              <span> 72 / 100 </span>
+            <div
+              class="inline-flex justify-between p-4 rounded-lg bg-cobal-blue/5"
+            >
+              <div class="inline-flex">
+                <img
+                  class="pr-4"
+                  src="./assets/images/icon-visual.svg"
+                  alt="visual icon"
+                />
+                <h3 class="font-bold text-cobal-blue">Visual</h3>
+              </div>
+              <p>
+                <span class="text-dark-gray-blue font-extrabold">72</span> / 100
+              </p>
             </div>
           </div>
 
           <a
-            class="bg-slate-800 text-gray-100 text-center rounded-full p-3"
+            class="bg-slate-800 text-gray-100 text-center rounded-full p-3 hover:bg-gradient-to-b from-light-slate-blue to-light-royal-blue"
             href="#"
           >
             Continue
